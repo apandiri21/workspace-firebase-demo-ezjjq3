@@ -52,10 +52,18 @@ firebase
   .firestore()
   .collection("hoteldata")
   .onSnapshot(function(querySnapshot) {
+    //console.log(querySnapshot);
     console.log(querySnapshot.size);
-    querySnapshot.forEach(doc => {
+    querySnapshot.forEach(doc =>{
       console.log(doc.data());
-      console.log(doc.data().room);
-      console.log(doc.data().checkout);
+    //  var roomtype= doc.data().room;
+    //   if (roomtype =="1 Bedroom Smaller Suite $169"){
+    //     do sth
+    //   console.log("This roomtype");
+    //  }
+   
+
+      
     });
+
   });

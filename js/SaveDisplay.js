@@ -16,3 +16,6 @@ $(".sampleSurvey input[type='submit']").click(function(e) {
 });
 
 // update the result in table
+var value = parseInt($("#ans3").text()) + 1;
+console.log($(''))
+$('#ans3').text("5");
